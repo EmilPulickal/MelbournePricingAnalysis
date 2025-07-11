@@ -12,6 +12,6 @@ size = int(st.text_input("Landsize: ","220"))
 
 featureInput = np.array([[car,size,area,year]])
 
-sal = model.predict(featureInput)
+sal = model.predict(featureInput)[0]
 
-st.write(f'Hello, *World!* :sunglasses: . Customer Group : {sal} ')
+st.write(f'Hello, *World!* :sunglasses: . Customer Group : ${sal} ')
